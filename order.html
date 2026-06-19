@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Halaman cek status pesanan Cafe 1994 menggunakan kode pesanan.">
+  <title>Cafe 1994 · Status Pesanan</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="menu.html" aria-label="Cafe 1994">
+        <span class="brand-mark">94</span>
+        <span class="brand-copy">
+          <span class="brand-title">Cafe 1994</span>
+          <span class="brand-subtitle" data-table-badge>Meja</span>
+        </span>
+      </a>
+      <nav class="nav-actions" aria-label="Navigasi utama">
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link active" href="order.html">Pesanan</a>
+        <a class="icon-link" href="cart.html" aria-label="Keranjang">🧺<span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <div class="container page-section">
+      <div class="page-title">
+        <div>
+          <h1>Cek Pesanan</h1>
+          <p>Masukkan kode pesanan untuk melihat status pembayaran dan proses dapur.</p>
+        </div>
+        <a class="secondary-btn" href="menu.html">Kembali ke Menu</a>
+      </div>
+
+      <div class="status-layout">
+        <aside class="panel">
+          <h2>Kode Pesanan</h2>
+          <form class="form-grid" data-order-form>
+            <label class="label">
+              Masukkan kode
+              <input class="input" type="text" autocomplete="off" data-order-code-input placeholder="Contoh: C94-AB123">
+            </label>
+            <button class="primary-btn" type="submit">Lihat Status</button>
+          </form>
+          <div style="height: 22px;"></div>
+          <h3>Pesanan terbaru di perangkat ini</h3>
+          <div class="bank-options" data-recent-orders></div>
+        </aside>
+
+        <section class="order-result" data-order-result>
+          <div class="empty-card">
+            <div class="empty-icon">📦</div>
+            <h2>Belum ada kode dipilih</h2>
+            <p class="muted">Setelah checkout, kode pesanan akan muncul di halaman berhasil.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div data-bottom-nav></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/order.js"></script>
+</body>
+</html>

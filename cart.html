@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Keranjang pesanan Cafe 1994 dengan total harga, jumlah item, dan tombol lanjut checkout.">
+  <title>Cafe 1994 · Keranjang</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="menu.html" aria-label="Cafe 1994">
+        <span class="brand-mark">94</span>
+        <span class="brand-copy">
+          <span class="brand-title">Cafe 1994</span>
+          <span class="brand-subtitle" data-table-badge>Meja</span>
+        </span>
+      </a>
+      <nav class="nav-actions" aria-label="Navigasi utama">
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="order.html">Pesanan</a>
+        <a class="icon-link" href="cart.html" aria-label="Keranjang">🧺<span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-shell" data-cart-page>
+    <div class="container page-section">
+      <div class="page-title">
+        <div>
+          <h1>Keranjang</h1>
+          <p>Periksa lagi pesanan kamu sebelum checkout.</p>
+        </div>
+        <span class="badge dark" data-table-badge>Meja</span>
+      </div>
+      <div class="cart-layout">
+        <section class="panel">
+          <div class="cart-list" data-cart-list></div>
+        </section>
+        <aside class="summary-card" data-cart-summary></aside>
+      </div>
+    </div>
+  </main>
+
+  <div data-bottom-nav></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

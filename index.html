@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sistem pemesanan menu Cafe 1994 berbasis QR, responsif untuk HP dan desktop.">
+  <title>Cafe 1994 · Pilih Meja</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="clean-page">
+  <main class="auth-card">
+    <div class="auth-logo">94</div>
+    <div>
+      <div class="eyebrow">QR Table Ordering</div>
+      <h1>Cafe 1994</h1>
+      <p>Masukkan nomor meja setelah scan QR. Setelah itu kamu bisa pilih menu, tambah ke keranjang, bayar, lalu cek status pesanan.</p>
+    </div>
+
+    <form class="form-grid" data-table-form>
+      <label class="label">
+        Nomor meja
+        <input class="input" type="text" inputmode="numeric" autocomplete="off" data-table-input placeholder="Contoh: 12" required>
+        <span class="helper">QR bisa memakai format <strong>index.html?table=12</strong> agar nomor meja otomatis terisi.</span>
+      </label>
+      <button class="primary-btn" type="submit">Masuk ke Menu</button>
+      <a class="secondary-btn" href="order.html">Cek Status Pesanan</a>
+    </form>
+  </main>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

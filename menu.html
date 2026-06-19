@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Menu Cafe 1994 dengan kategori makanan, coffee, non coffee, promo, rekomendasi, cemilan, dan dessert.">
+  <title>Cafe 1994 · Menu</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="menu.html" aria-label="Cafe 1994">
+        <span class="brand-mark">94</span>
+        <span class="brand-copy">
+          <span class="brand-title">Cafe 1994</span>
+          <span class="brand-subtitle" data-table-badge>Meja</span>
+        </span>
+      </a>
+      <nav class="nav-actions" aria-label="Navigasi utama">
+        <a class="nav-link active" href="menu.html">Menu</a>
+        <a class="nav-link" href="order.html">Pesanan</a>
+        <a class="icon-link" href="cart.html" aria-label="Keranjang">🧺<span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="container hero">
+      <div class="hero-card">
+        <div class="eyebrow">Pesan dari meja</div>
+        <h1>Menu Cafe 1994</h1>
+        <p>Pilih menu, atur ukuran, suhu, gula, level pedas, topping, dan catatan. Sistem ini menyimpan keranjang di browser untuk kebutuhan prototipe frontend sebelum terhubung ke server.</p>
+        <div class="search-row">
+          <a class="primary-btn" href="#menu-list">Mulai Pilih Menu</a>
+          <a class="secondary-btn" href="cart.html">Lihat Keranjang</a>
+        </div>
+      </div>
+      <aside class="hero-card hero-side">
+        <div class="stat-row">
+          <div class="stat-card"><strong>8</strong><span>Kategori</span></div>
+          <div class="stat-card"><strong>14</strong><span>Menu contoh</span></div>
+          <div class="stat-card"><strong>10m</strong><span>Limit tunai</span></div>
+        </div>
+        <div class="panel">
+          <strong>Alur cepat</strong>
+          <p class="muted">Pilih menu, masuk keranjang, checkout, bayar, lalu simpan kode pesanan untuk cek status.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="container search-filter-card" id="menu-list">
+      <div class="search-row">
+        <input class="input" type="search" data-search placeholder="Cari kopi, nasi, croffle, promo...">
+        <button class="secondary-btn" type="button" data-reset-filter>Reset</button>
+      </div>
+      <div class="category-scroll" data-categories aria-label="Kategori menu"></div>
+    </section>
+
+    <section class="container page-section">
+      <div class="page-title">
+        <div>
+          <h1>Daftar Menu</h1>
+          <p data-product-count>Menu tersedia</p>
+        </div>
+        <span class="badge dark" data-table-badge>Meja</span>
+      </div>
+      <div class="product-grid" data-product-grid></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" data-custom-modal>
+    <div class="modal-card" data-modal-body role="dialog" aria-modal="true"></div>
+  </div>
+
+  <div data-bottom-nav></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/menu.js"></script>
+</body>
+</html>
